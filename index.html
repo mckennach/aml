@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta version="V2.1">
+	<meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+	<title id="main-title">AML Entertainment</title>
+  <!--FONTS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="icon" rel="icon" type="image/png" href="img/logo.png">
+
+  <!--CSS-->
+  <link type="text/css" href="css/style.css" rel="stylesheet" />
+  <!-- JS -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				App.init();
+			});
+		</script>
+</head>
+<body>
+  <div id="page-wrapper">
+		<header>
+			<div class="left" id="header-title-container">
+				<h1 id="header-title" class="righteous">AML</h1>
+				<h1 id="header-title-sub" class="thin montserrat">entertainment</h1>
+			</div>
+
+			<nav id="main-nav">
+				<ul class="montserrat thin" id="main-nav-ul">
+					<li data-nav="about" class="nav-selected nav-item left">about</li>
+					<li data-nav="work" class="nav-item left">clients</li>
+					<li data-nav="contact" class="nav-item left">contact</li>
+					<a href="https://www.juicer.io/thewerksmusic" target="_blank"><li data-nav="blog" class="nav-item blog-nav left">in action</li></a>
+
+				</ul>
+			</nav>
+
+			<div id="mobile-nav">
+				<i class="fa fa-bars"></i>
+			</div>
+
+
+
+		</header>
+
+		<nav id="mobile-nav-container">
+			<ul class="montserrat thin" id="mobile-nav-ul">
+				<li data-nav="about" class="nav-selected nav-item">about</li>
+				<li data-nav="work" class="nav-item">clients</li>
+				<li data-nav="contact" class="nav-item">contact</li>
+				<a href="https://www.juicer.io/thewerksmusic" target="_blank"><li data-nav="blog" class="nav-item blog-nav">in action</li></a>
+			</ul>
+		</nav>
+
+
+    <div onscroll="App.intro();" id="home">
+      <div class="left" id="logo-container">
+          <h1 id="page-title" class="righteous">AML</h1>
+					<h1 id="page-title-sub" class="thin montserrat">entertainment</h1>
+      </div>
+			<div id="page-title-navigator-container">
+					<i class="fa fa-chevron-down" id="page-title-navigator"></i>
+			</div>
+    </div>
+
+		<div style="display: none;" id="about" class="opened-page">
+			<div id="about-container">
+				<div id="what-container" class="opened">
+					<h1 class="righteous about-header">WHAT WE DO</h1>
+					<div class="montserrat thin" id="what">
+						<p>AML Entertainment is an independent business based in Denver, CO offering professional services in marketing, social media coordination and merchandising.</p>
+						<p>Focusing on the entertainment industry, AML Entertainment provides specialized expertise in event/merchandise promotion, international tour marketing, sponsor coverage, etc.</p>
+
+					</div>
+				</div>
+				<div id="who-container" class="closed-right">
+					<h1 class="righteous about-header">WHO WE ARE</h1>
+					<div class="montserrat thin" id="who">
+						<p>Anna Lisle, the founder of AML Entertainment, began her career in Artist Management.</p>
+						<p>Combining her work in the music industry with her Marketing degree from Leeds School of Business at the University of Colorado, Anna found a specialized passion for Social Media management.</p>
+						<p>Following this passion, Anna currently manages the social media accounts for Red Rocks Park and Amphitheatre, Michael Menert, and The Werks. </p>
+					</div>
+					<img class="profile-pic" src="img/headshot.png">
+
+				</div>
+
+				<div id="services-container" class="closed-right">
+					<h1 class="righteous about-header">SERVICES OFFERED</h1>
+					<div class="montserrat thin" id="services">
+						<ul id="services-ul">
+							<li><span class="bold">Social Media Account Management</span>:<br> Facebook, Twitter, Instagram</li>
+							<li><span class="bold">Online Event Management</span>:<br> Bandsintown, Songkick, FB events</li>
+							<li><span class="bold">Promotional Video and Photo Editing</span>:<br> Adobe Premiere, Illustrator, Photoshop, etc</li>
+							<li><span class="bold">International Tour Marketing</span>:<br> Promoter communication and collaboration</li>
+							<li><span class="bold">Facebook Business Management</span>:<br> Advertisements, Dark posting, etc.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="about-navigator">
+					<i class="fa fa-chevron-left about-nav" id="about-nav-left"></i>
+						<i id="what-circle" class="circle-nav fa fa-circle"></i>
+						<i id="who-circle" class="circle-nav fa fa-circle-o"></i>
+						<i id="services-circle" class="circle-nav fa fa-circle-o"></i>
+					<i class="fa fa-chevron-right about-nav" id="about-nav-right"></i>
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div id="work" class="" style="display: none;">
+			<div id="work-container">
+				<div class="" id="work-header-container">
+					<h1 class="work-nav-selected left work-header" id="current-clients-nav">CURRENT CLIENTS</h1> <span class="thin left work-header-slash">/</span> <h1 class="left work-header" id="previous-clients-nav">PREVIOUS CLIENTS</h1>
+				</div>
+					<div id="current-clients" class="opened">
+						<div class="left row" id="row-1">
+							<a href="http://redrocksonline.com/" target="_blank"><img title="Image by: Calder Wilson" src="img/redrocks.png" class="left work-profile-pic"></a>
+							<div class="left current-profile">
+								<h2 id="red-rocks-prof">RED ROCKS PARK & AMPHITHEATRE</h2>
+								<h3 class="thin">CURRENT ACCOUNTS MANAGING</h3>
+								<div class="social-media-container">
+									<a href="https://www.facebook.com/RedRocksCO/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://www.instagram.com/redrocksco/" target="_blank"><i class="fa fa-instagram"></i></a>
+									<a href="https://twitter.com/RedRocksCO" target="_blank"><i class="fa fa-twitter-square"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="left row" id="row-2">
+							<a href="http://thewerksmusic.com/" target="_blank"><img title="Image by: Silky Shots" src="img/werks.png" class="left work-profile-pic"></a>
+
+							<div class="left current-profile">
+								<h2 id="werks-prof">THE WERKS</h2>
+								<h3 class="thin">CURRENT ACCOUNTS MANAGING</h3>
+								<div class="social-media-container">
+									<a href="https://www.facebook.com/thewerksmusic/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://www.instagram.com/thewerksmusic/" target="_blank"><i class="fa fa-instagram"></i></a>
+									<a href="https://twitter.com/TheWerksMusic" target="_blank"><i class="fa fa-twitter-square"></i></a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="left row" id="row-3">
+							<a href="https://menertmusic.com/" target="_blank"><img title="Image by: Chester Pink" src="img/menert.png" class="left work-profile-pic"></a>
+
+							<div class="left current-profile">
+								<h2 id="minert-prof">MICHAEL MENERT</h2>
+								<h3 class="thin">CURRENT ACCOUNTS MANAGING</h3>
+								<div class="social-media-container">
+									<a href="https://www.facebook.com/michalmenert/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://www.instagram.com/michalmenert/" target="_blank"><i class="fa fa-instagram"></i></a>
+									<a href="https://twitter.com/michalmenert" target="_blank"><i class="fa fa-twitter-square"></i></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+					<div id="previous-clients" class="closed-right">
+
+
+						<div class="left row" id="row-1">
+							<a href="https://sts9.com/" target="_blank">
+							<img title="Image by: aLIVE Coverage" src="img/sts9.png" class="left work-profile-pic-small">
+							<div class="left prev-profile ">
+								<h2 id="sts9-prof">STS9</h2>
+							</div>
+						</a>
+						</div>
+
+						<div class="left row" id="row-2">
+							<a href="https://www.facebook.com/1320records/?fref=ts" target="_blank">
+								<img src="img/1320.jpg" class="left work-profile-pic-small">
+								<div class="left prev-profile">
+									<h2 id="record-prof">1320 Records</h2>
+								</div>
+						</a>
+						</div>
+
+						<div class="left row" id="row-3">
+							<a href="http://nahko.com/" target="_blank">
+								<img title="Image by: Josue Rivas" src="img/nahko.png" class="left work-profile-pic-small">
+								<div class="left prev-profile">
+									<h2 id="nahko-prof">Nahko and Medicine for the People</h2>
+								</div>
+						</a>
+						</div>
+
+						<div class="left row" id="row-4">
+							<a href="http://yondermountain.com/" target="_blank">
+								<img title="Image by: Spady Photography." src="img/ymsb.png" class="left work-profile-pic-small">
+								<div class="left prev-profile">
+									<h2 id="ymsb-prof">Yonder Mountain String Band</h2>
+								</div>
+
+						</a>
+						</div>
+
+						<div class="left row" id="row-5">
+							<a href="http://www.papadosio.com/" target="_blank">
+							<img title="Image by: aLIVE Coverage" src="img/papadosio.png" class="left work-profile-pic-small">
+							<div class="left prev-profile">
+								<h2 id="papa-prof">Papadosio</h2>
+							</div>
+						</a>
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+		<div id="contact" class="" style="display: none;">
+			<div id="contact-container">
+				<!-- Begin MailChimp Signup Form -->
+
+				<div id="mc_embed_signup">
+				<form action="//amlentertainment.us16.list-manage.com/subscribe/post?u=aceb4ff6a410b641e181821f7&amp;id=4a0d1e64ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll">
+					<h2 class="subscribe-header righteous">Contact Anna</h2>
+				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+				<div class="montserrat thin mc-field-group">
+			</br>
+					<input placeholder="&#xf003; Email" style="font-family: FontAwesome, 'Montserrat';" type="email" value="" name="EMAIL" class="input-field required email" id="mce-EMAIL">
+				</div>
+				<div class="montserrat thin mc-field-group">
+
+					<br>
+					<input placeholder="&#xf007; First Name" style="font-family: FontAwesome, 'Montserrat';" type="text" value="" name="FNAME" class="input-field " id="mce-FNAME">
+				</div>
+				<div class="montserrat thin mc-field-group">
+
+					<br>
+					<input placeholder="&#xf007; Last Name" style="font-family: FontAwesome, 'Montserrat';" type="text" value="" name="LNAME" class="input-field " id="mce-LNAME">
+				</div>
+
+				<div class="mc-field-group">
+					<br>
+					<textarea  placeholder="&#xf007; Message.." type="text" value="" style="font-family: FontAwesome, 'Montserrat';" name="MMERGE3" class="" id="mce-MMERGE3"></textarea>
+				</div>
+
+
+					<div id="montserrat thin mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aceb4ff6a410b641e181821f7_4a0d1e64ef" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				    </div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+				<footer id="contact-footer">
+					<div class="right montserrat thin" id="credits">Website by: <a class="credit-email" href="mailto:mckennach@gmail.com" target="_top">Chris McKenna</a> <i class="fa fa-copyright"></i></div>
+
+				</footer>
+			</div>
+
+
+		</div>
+
+
+
+  </div>
+</body>
+</html>
